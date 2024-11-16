@@ -44,15 +44,16 @@ Explore Python's built-in methods (dunder methods) that allow you to customize t
 
 ## Code Examples
 
-In this repository, each topic is covered in separate Python files, including:
+In this repository, each topic is covered in separate files, including:
 
+- `00_Intro.md` - Introduction to OOP
 - `01_basic_oop_concepts.py` - Introduction to classes and objects
 - `02_encapsulation.py` - Encapsulation and private attributes
 - `03_inheritance.py` - Understanding inheritance in Python
 - `04_polymorphism.py` - Using polymorphism for code reusability
 - `05_abstraction.py` - Working with abstract base classes
 - `06_magic_methods.py` - Understanding magic methods like `__init__`, `__str__`, and `__add__`
-- `07_exercises.py` - A series of exercises to test your knowledge of OOP
+- `07_exercises.md` - A series of exercises to test your knowledge of OOP
 
 ## Exercises
 
