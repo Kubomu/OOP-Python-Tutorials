@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+import math
 
 class Shape(ABC):
     """
@@ -48,7 +49,7 @@ class Circle(Shape):
         Returns:
             float: The area of the circle.
         """
-        return 3.14 * self.radius * self.radius
+        return math.pi * self.radius * self.radius
 
 
 # Create an instance of Circle
