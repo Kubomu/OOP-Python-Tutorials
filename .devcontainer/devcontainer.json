@@ -1,0 +1,19 @@
+{
+  "name": "OOP Python Tutorials",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ],
+      "settings": {
+        "python.testing.pytestEnabled": true,
+        "python.testing.pytestArgs": [
+          "exercises"
+        ]
+      }
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "postAttachCommand": "python check.py"
+}
