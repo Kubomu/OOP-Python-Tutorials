@@ -1,0 +1,24 @@
+name: Check exercises
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    # The exercises in this template ship unsolved on purpose, so this check is
+    # skipped on the original repo (keeping its main branch clean). On any fork,
+    # it runs on every push so a learner sees a green check once their solutions
+    # in exercises/practice.py pass.
+    if: github.repository != 'Kubomu/OOP-Python-Tutorials'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run the exercise tests
+        run: pytest exercises -q
